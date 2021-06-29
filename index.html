@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xapisoft budgeting app</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+   <div class="app">
+    <form>
+        <h1>
+            XAPISOFT <br> BUDGETING APP
+        </h1>
+        <div class="form-row">
+            <div class="form-group amount save">
+                <label for="amount">Monthly Salary</label>
+                <input type="number" class="form-control" id="amount" min="100" step="100" class = "width" placeholder="Please enter the amount you want to budget for">
+                <small id="amount-required"></small>
+            </div>
+         <div class="myex grp">
+                <h4>Expenditure</h4>
+            <div class="expenditure">
+                <div class="form-group">
+                    <label for="rent">Rent</label>
+                    <input type="number" class="form-control" id="rent" min="100" step="100" class = "width" value="00000">
+                </div>
+                <div class="form-group">
+                    <label for="utilities">Utilities</label>
+                    <input type="number" class="form-control" id="utilities" min="100" step="100" class = "width" value="0000">
+                </div>
+            </div>
+        </div>
+         
+         </div>
+          <div class="form-group amount save">
+            <label for="saving">Preffered saving plan</label>
+            <select id= "save" class="form-control">
+              <option >Choose saving plan...</option>
+              <option value="Basic" >Basic</option>
+              <option value="Premium" >Premium</option>
+            </select>
+            <small id="savingplan-required"></small>
+          </div>
+          <div class="expenditure amount save">
+            <div class="form-group">
+                <label for="item">Desired product name</label>
+                <input type="text" class="form-control" id="item" placeholder="Any item you want to buy">
+                <small id="name-required"></small>
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="number" class="form-control" id="price" min="100" step="100" class = "width" value="0000">
+                <small id="price-required"></small>
+            </div>
+        </div>
+        <div class="amount myex mid">
+            <button id="btn"  type="button" class="btn btn-warning" onclick="display()">Seek Advice</button>
+        </div>
+        <p  id="demo"> </p>
+         
+      </form>
+   </div>
+    <script src="app.js"></script>
+</body>
+</html>

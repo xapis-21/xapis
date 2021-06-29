@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rajdhani:wght@500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    background: url(img/ian-schneider-TamMbr4okv4-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    align-items: center;
+}
+.app{
+    width: 500px;
+    height: 80vh;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.637);
+    border-radius: 25px;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+}
+h1{
+    width: 100%;
+    background-color: rgb(2, 173, 136);
+    border-radius: 25px 25px 0 0;
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color:white;
+}
+h4{
+    font-size: 18px;
+}
+.grp{
+    width: 90%;
+    margin: auto;
+}
+small{
+    font-family: 'rajdhani', sans-serif;
+    color: red;
+    font-weight: bold;
+}
+.peek{
+    animation: peek 5s ease-in forwards;
+}
+.fail{
+    color: red;
+}
+
+ .expenditure{
+    width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+ .amount, .ex{
+    width: 90%;
+    margin: 10px auto;
+}
+ .myex{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: auto;
+     border-bottom: 1px solid rgba(128, 128, 128, 0.699);
+ }
+
+ #btn{
+     width: 30%;
+     display: block;
+ }
+ .mid{
+     text-align: center;
+     border: none;
+     margin-bottom: 10px;
+ }
+ #demo{
+     background-color: white;
+     height: 70px;
+     padding: 10px 10px;
+     line-height: 25px;
+     text-align: center;
+     border-radius: 0 0 25px 25px;
+     font-weight: bold;
+     font-size: 23px;
+     width: 100%;
+     color: rgba(2, 173, 136, 0.685);
+     position: absolute;
+     bottom: -20px;
+ }
+ .success{
+     color: rgba(2, 173, 136, 0.685);
+ }
+ .save{
+     padding: 60px auto;
+    height: 80px;
+ }
+ 
+
+ @keyframes peek{
+     0%{
+         opacity: 1;
+     }
+     100%{
+         opacity: 0;
+     }
+ }
+
